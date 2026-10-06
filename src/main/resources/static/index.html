@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RailGo — Railway Reservation</title>
+    <link rel="stylesheet" href="theme.css">
+</head>
+<body>
+
+<header class="topbar">
+    <a href="index.html" class="brand">
+        <span class="brand-dot"></span>
+        RailGo
+    </a>
+    <nav class="topnav" id="topnav"></nav>
+</header>
+
+<section class="hero">
+    <h1>Book your journey. <br>Reserve your cargo.</h1>
+    <p>Search trains across India, reserve seats, and send parcels — all in one place.</p>
+</section>
+
+<section class="page">
+    <div class="panel">
+        <div class="panel-title">Quick Search</div>
+        <form id="quickSearchForm">
+            <div style="display:grid; grid-template-columns: 1fr 1fr; gap:16px;">
+                <div class="field">
+                    <label>From</label>
+                    <input type="text" id="quickFrom" placeholder="Kolkata" required>
+                </div>
+                <div class="field">
+                    <label>To</label>
+                    <input type="text" id="quickTo" placeholder="Delhi" required>
+                </div>
+            </div>
+            <div class="field">
+                <label>Journey Date</label>
+                <input type="date" id="quickDate" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Find Trains →</button>
+        </form>
+    </div>
+</section>
+
+<section class="feature-grid">
+    <div class="feature">
+        <div class="feature-icon">🚆</div>
+        <h3>Live Search</h3>
+        <p>Search routes and see all available trains instantly.</p>
+    </div>
+    <div class="feature">
+        <div class="feature-icon">🎫</div>
+        <h3>Fast Booking</h3>
+        <p>Reserve your seat with a unique PNR in seconds.</p>
+    </div>
+    <div class="feature">
+        <div class="feature-icon">📦</div>
+        <h3>Send Parcels</h3>
+        <p>Book parcel shipments with automatic charge calculation.</p>
+    </div>
+    <div class="feature">
+        <div class="feature-icon">📋</div>
+        <h3>Track Everything</h3>
+        <p>View all your bookings and parcels in one dashboard.</p>
+    </div>
+</section>
+
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account — RailGo</title>
+    <link rel="stylesheet" href="theme.css">
+</head>
+<body>
+
+<header class="topbar">
+    <a href="index.html" class="brand">
+        <span class="brand-dot"></span>
+        RailGo
+    </a>
+    <nav class="topnav" id="topnav"></nav>
+</header>
+
+<section class="page narrow">
+    <div class="panel">
+        <div class="panel-title">Create Account</div>
+        <form id="registerForm">
+            <div class="field">
+                <label>Full Name</label>
+                <input type="text" id="regName" placeholder="John Doe" required>
+            </div>
+            <div class="field">
+                <label>Email</label>
+                <input type="email" id="regEmail" placeholder="john@example.com" required>
+            </div>
+            <div class="field">
+                <label>Phone</label>
+                <input type="tel" id="regPhone" placeholder="9876543210" required>
+            </div>
+            <div class="field">
+                <label>Password</label>
+                <input type="password" id="regPassword" placeholder="Choose a password" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Create Account</button>
+        </form>
+        <div class="divider"></div>
+        <p class="text-center" style="font-size:13px; color:var(--muted);">
+            Already registered? <a href="login.html" class="link">Sign in</a>
+        </p>
+    </div>
+</section>
+
+<script src="app.js"></script>
+</body>
+</html>

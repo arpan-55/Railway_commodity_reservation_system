@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Trains — RailGo</title>
+    <link rel="stylesheet" href="theme.css">
+</head>
+<body>
+
+<header class="topbar">
+    <a href="index.html" class="brand">
+        <span class="brand-dot"></span>
+        RailGo
+    </a>
+    <nav class="topnav" id="topnav"></nav>
+</header>
+
+<section class="page">
+    <div class="panel">
+        <div class="panel-title">Search Trains</div>
+        <form id="searchForm">
+            <div style="display:grid; grid-template-columns: 1fr 1fr; gap:16px;">
+                <div class="field">
+                    <label>From</label>
+                    <input type="text" id="src" placeholder="Kolkata" required>
+                </div>
+                <div class="field">
+                    <label>To</label>
+                    <input type="text" id="dest" placeholder="Delhi" required>
+                </div>
+            </div>
+            <div class="field">
+                <label>Journey Date</label>
+                <input type="date" id="jdate" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Search Trains</button>
+        </form>
+    </div>
+
+    <div id="searchResults"></div>
+</section>
+
+<script src="app.js"></script>
+</body>
+</html>
